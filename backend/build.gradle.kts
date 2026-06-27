@@ -26,7 +26,6 @@ dependencies {
     implementation("io.ktor:ktor-server-content-negotiation")
     implementation("io.ktor:ktor-serialization-kotlinx-json")
 
-
     implementation("ch.qos.logback:logback-classic:1.5.34")
     implementation("io.github.oshai:kotlin-logging-jvm:8.0.4")
 }

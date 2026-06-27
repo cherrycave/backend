@@ -1,14 +1,14 @@
 package dev.boecker.cherrycave.backend
 
-import dev.boecker.ccbackend.db.table.MinecraftPlayers
-import dev.boecker.ccbackend.rest.playerRoute
+import dev.boecker.cherrycave.backend.db.table.MinecraftPlayers
+import dev.boecker.cherrycave.backend.rest.playerRoute
 import io.github.oshai.kotlinlogging.KotlinLogging
-import io.ktor.serialization.kotlinx.json.json
-import io.ktor.server.application.install
-import io.ktor.server.cio.CIO
-import io.ktor.server.engine.embeddedServer
-import io.ktor.server.plugins.contentnegotiation.ContentNegotiation
-import io.ktor.server.routing.routing
+import io.ktor.serialization.kotlinx.json.*
+import io.ktor.server.application.*
+import io.ktor.server.cio.*
+import io.ktor.server.engine.*
+import io.ktor.server.plugins.contentnegotiation.*
+import io.ktor.server.routing.*
 import org.jetbrains.exposed.v1.migration.r2dbc.MigrationUtils
 import org.jetbrains.exposed.v1.r2dbc.R2dbcDatabase
 import org.jetbrains.exposed.v1.r2dbc.transactions.TransactionManager

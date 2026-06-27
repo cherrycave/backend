@@ -1,4 +1,4 @@
-package dev.boecker.cherrycave.permission.luckperms.serializer
+package dev.boecker.cherrycave.common.serializer
 
 import kotlinx.serialization.KSerializer
 import kotlinx.serialization.descriptors.PrimitiveKind
